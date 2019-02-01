@@ -144,9 +144,18 @@ td {
 
 table {
   border-collapse: collapse;
-  border-color: black;
+}
+
+table, th, td {
+  border: 1px solid black;
 }
 
 ul {
   font-family: "Verdana", Sans-serif;
+}
+
+#picture {
+  height: 66%;
+  /*height: 333px;*/
+  width: 100%;
 }
