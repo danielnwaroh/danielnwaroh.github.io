@@ -1,6 +1,6 @@
 //alert(document.getElementById('inputbar')[0].innerHTML);
 //document.getElementById('inputbar').innerHTML="new content";
-alert('Hello');
+alert('A2 by Daniel Nwaroh');
 
 var inputbar = document.getElementById('inputbar'),
 resultbar = document.getElementById('resultbar'),
