@@ -31,6 +31,20 @@ var array_result = [];
 var result = 0;
 var pushEq = false;
 
+function myFunction(button, pushed) {
+  var x = button.textContent;
+  if (pushed == true) {
+    array_name = [];
+    array_name.push(x);
+    inputbar.innerHTML = array_name.join("");
+    pushEq = false;
+  }
+  else {
+    array_name.push(x);
+    inputbar.innerHTML = array_name.join("");
+  }
+}
+
 zero.onclick = function() {
     console.log("here");
     var x = zero.textContent;
@@ -49,17 +63,18 @@ zero.onclick = function() {
 };
 one.onclick = function() {
     console.log("here");
-    var x = one.textContent;
-    // inputbar.innerHTML = x;
-    if (pushEq == true) {
-      array_name = [];
-      array_name.push(x);
-      inputbar.innerHTML = array_name.join("");
-    }
-    else {
-      array_name.push(x);
-      inputbar.innerHTML = array_name.join("");
-    }
+    // var x = one.textContent;
+    // // inputbar.innerHTML = x;
+    // if (pushEq == true) {
+    //   array_name = [];
+    //   array_name.push(x);
+    //   inputbar.innerHTML = array_name.join("");
+    // }
+    // else {
+    //   array_name.push(x);
+    //   inputbar.innerHTML = array_name.join("");
+    // }
+    myFunction(one, pushEq);
 };
 two.onclick = function() {
     console.log("here");

@@ -98,4 +98,8 @@
     background-color: #A8B9D1;
   }
 
+  .flex-container > div:active {
+    background-color: #A8B9D1;
+  }
+
 }
