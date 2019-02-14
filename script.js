@@ -252,18 +252,28 @@ equals.onclick = function() {
     resultbar.innerHTML = array_name.join("")+" =";
     try {
       result = eval(a);
+      console.log(result);
+      //array_name.push(result);
+      //resultbar.innerHTML = result;
+      //array_result.push(array_name.join(""));
+      array_name = [];
+      array_name.push(result);
+      //array_result.push(result);
+      pushEq = true;
+      inputbar.innerHTML = result;
     }
     catch(err) {
       console.log("ERROR");
+      inputbar.innerHTML = "ERROR";
     }
-    console.log(result);
-    //array_name.push(result);
-    //resultbar.innerHTML = result;
-    //array_result.push(array_name.join(""));
-    array_name = [];
-    array_name.push(result);
-    //array_result.push(result);
-    pushEq = true;
-    inputbar.innerHTML = result;
+    // console.log(result);
+    // //array_name.push(result);
+    // //resultbar.innerHTML = result;
+    // //array_result.push(array_name.join(""));
+    // array_name = [];
+    // array_name.push(result);
+    // //array_result.push(result);
+    // pushEq = true;
+    // inputbar.innerHTML = result;
     //resultbar.innerHTML = array_name.join("") + "=";
 }
