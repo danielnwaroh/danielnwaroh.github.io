@@ -29,79 +29,149 @@ console.log(document.getElementById('resultbar').clientHeight);
 var array_name = [];
 var array_result = [];
 var result = 0;
+var pushEq = false;
+
 zero.onclick = function() {
-    // alert('Hi');
-    // inputbar.innerHTML=document.getElementById('inputbar').textContent;
     console.log("here");
     var x = zero.textContent;
     // inputbar.innerHTML = x;
-    array_name.push(x);
-    // myFunction(zero);
-    inputbar.innerHTML = array_name.join("");
+    if (pushEq == true) {
+      array_name = [];
+      //console.log("39");
+      array_name.push(x);
+      inputbar.innerHTML = array_name.join("");
+      pushEq = false;
+    }
+    else {
+      array_name.push(x);
+      inputbar.innerHTML = array_name.join("");
+    }
 };
 one.onclick = function() {
     console.log("here");
     var x = one.textContent;
     // inputbar.innerHTML = x;
-    array_name.push(x);
-    inputbar.innerHTML = array_name.join("");
+    if (pushEq == true) {
+      array_name = [];
+      array_name.push(x);
+      inputbar.innerHTML = array_name.join("");
+    }
+    else {
+      array_name.push(x);
+      inputbar.innerHTML = array_name.join("");
+    }
 };
 two.onclick = function() {
     console.log("here");
     var x = two.textContent;
     // inputbar.innerHTML = x;
-    array_name.push(x);
-    inputbar.innerHTML = array_name.join("");
+    if (pushEq == true) {
+      array_name = [];
+      array_name.push(x);
+      inputbar.innerHTML = array_name.join("");
+    }
+    else {
+      array_name.push(x);
+      inputbar.innerHTML = array_name.join("");
+    }
 };
 three.onclick = function() {
     console.log("here");
     var x = three.textContent;
     // inputbar.innerHTML = x;
-    array_name.push(x);
-    inputbar.innerHTML = array_name.join("");
+    if (pushEq == true) {
+      array_name = [];
+      array_name.push(x);
+      inputbar.innerHTML = array_name.join("");
+    }
+    else {
+      array_name.push(x);
+      inputbar.innerHTML = array_name.join("");
+    }
 };
 four.onclick = function() {
     console.log("here");
     var x = four.textContent;
     // inputbar.innerHTML = x;
-    array_name.push(x);
-    inputbar.innerHTML = array_name.join("");
+    if (pushEq == true) {
+      array_name = [];
+      array_name.push(x);
+      inputbar.innerHTML = array_name.join("");
+    }
+    else {
+      array_name.push(x);
+      inputbar.innerHTML = array_name.join("");
+    }
 };
 five.onclick = function() {
     console.log("here");
     var x = five.textContent;
     // inputbar.innerHTML = x;
-    array_name.push(x);
-    inputbar.innerHTML = array_name.join("");
+    if (pushEq == true) {
+      array_name = [];
+      array_name.push(x);
+      inputbar.innerHTML = array_name.join("");
+    }
+    else {
+      array_name.push(x);
+      inputbar.innerHTML = array_name.join("");
+    }
 };
 six.onclick = function() {
     console.log("here");
     var x = six.textContent;
     // inputbar.innerHTML = x;
-    array_name.push(x);
-    //console.log(array_name[0]);
-    inputbar.innerHTML = array_name.join("");
+    if (pushEq == true) {
+      array_name = [];
+      array_name.push(x);
+      inputbar.innerHTML = array_name.join("");
+    }
+    else {
+      array_name.push(x);
+      inputbar.innerHTML = array_name.join("");
+    }
 };
 seven.onclick = function() {
     console.log("here");
     var x = seven.textContent;
     // inputbar.innerHTML = x;
-    array_name.push(x);
-    inputbar.innerHTML = array_name.join("");
+    if (pushEq == true) {
+      array_name = [];
+      array_name.push(x);
+      inputbar.innerHTML = array_name.join("");
+    }
+    else {
+      array_name.push(x);
+      inputbar.innerHTML = array_name.join("");
+    }
 };
 eight.onclick = function() {
     console.log("here");
     var x = eight.textContent;
     // inputbar.innerHTML = x;
-    array_name.push(x);
-    inputbar.innerHTML = array_name.join("");
+    if (pushEq == true) {
+      array_name = [];
+      array_name.push(x);
+      inputbar.innerHTML = array_name.join("");
+    }
+    else {
+      array_name.push(x);
+      inputbar.innerHTML = array_name.join("");
+    }
 };
 nine.onclick = function() {
     console.log("here");
     var x = nine.textContent;
     // inputbar.innerHTML = x;
-    array_name.push(x);
-    inputbar.innerHTML = array_name.join("");
+    if (pushEq == true) {
+      array_name = [];
+      array_name.push(x);
+      inputbar.innerHTML = array_name.join("");
+    }
+    else {
+      array_name.push(x);
+      inputbar.innerHTML = array_name.join("");
+    }
 };
 lb.onclick = function() {
     console.log("here");
@@ -128,6 +198,7 @@ cbar.onclick = function() {
     resultbar.innerHTML = "ANS = " + result;
 };
 plus.onclick = function() {
+    pushEq = false;
     console.log("here");
     var x = plus.textContent;
     // inputbar.innerHTML = x;
@@ -135,6 +206,7 @@ plus.onclick = function() {
     inputbar.innerHTML = array_name.join("");
 };
 multiply.onclick = function() {
+    pushEq = false;
     console.log("here");
     var x = multiply.textContent;
     // inputbar.innerHTML = x;
@@ -142,6 +214,7 @@ multiply.onclick = function() {
     inputbar.innerHTML = array_name.join("");
 };
 divide.onclick = function() {
+    pushEq = false;
     console.log("here");
     var x = divide.textContent;
     // // inputbar.innerHTML = x;
@@ -149,6 +222,7 @@ divide.onclick = function() {
     inputbar.innerHTML = array_name.join("");
 };
 minus.onclick = function() {
+    pushEq = false;
     console.log("here");
     var x = minus.textContent;
     //// inputbar.innerHTML = x;
@@ -158,30 +232,38 @@ minus.onclick = function() {
 dot.onclick = function() {
     console.log("here");
     var x = dot.textContent;
-    array_name.push(x);
-    inputbar.innerHTML = array_name.join("");
+    if (pushEq == true) {
+      array_name = [];
+      array_name.push(x);
+      inputbar.innerHTML = array_name.join("");
+      pushEq = false;
+    }
+    else {
+      array_name.push(x);
+      inputbar.innerHTML = array_name.join("");
+    }
 };
-
-// function myFunction(button) {
-//   var x = button.textContent;
-//   // inputbar.innerHTML = x;
-//   array_name.push(x);
-//   //return array_name;
-// }
 
 equals.onclick = function() {
     console.log(array_name.toString());
+    console.log(array_name.join(""));
     var a = array_name.toString;
     a = array_name.join("");
-    console.log(array_name.join(""));
     resultbar.innerHTML = array_name.join("")+" =";
-    result = eval(a);
+    try {
+      result = eval(a);
+    }
+    catch(err) {
+      console.log("ERROR");
+    }
     console.log(result);
     //array_name.push(result);
     //resultbar.innerHTML = result;
     //array_result.push(array_name.join(""));
     array_name = [];
     array_name.push(result);
+    //array_result.push(result);
+    pushEq = true;
     inputbar.innerHTML = result;
     //resultbar.innerHTML = array_name.join("") + "=";
 }
