@@ -22,8 +22,6 @@ minus = document.getElementById('minus'),
 dot = document.getElementById('dot');
 equals = document.getElementById('equals');
 
-console.log(document.getElementById('resultbar').clientHeight);
-
 var array_name = [];
 var array_result = [];
 var result = 0;
