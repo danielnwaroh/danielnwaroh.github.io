@@ -1,5 +1,3 @@
-//alert(document.getElementById('inputbar')[0].innerHTML);
-//document.getElementById('inputbar').innerHTML="new content";
 alert('SENG 513 A2 by Daniel Nwaroh');
 
 var inputbar = document.getElementById('inputbar'),
@@ -31,188 +29,66 @@ var array_result = [];
 var result = 0;
 var pushEq = false;
 
-function myFunction(button, pushed) {
+function clickDigit(button, pushed) {
   var x = button.textContent;
   if (pushed == true) {
     array_name = [];
+    resultbar.innerHTML = "ANS = " + inputbar.innerHTML;
     array_name.push(x);
-    inputbar.innerHTML = array_name.join("");
+    inputbar.innerHTML = array_name.join(" ");
     pushEq = false;
   }
   else {
     array_name.push(x);
-    inputbar.innerHTML = array_name.join("");
+    inputbar.innerHTML = array_name.join(" ");
   }
 }
 
+function clickOp(button, pushed) {
+  if (pushEq == true) {
+    resultbar.innerHTML = "ANS = " + inputbar.innerHTML;
+  }
+  pushEq = false;
+  var x = button.textContent;
+  array_name.push(x);
+  inputbar.innerHTML = array_name.join(" ");
+}
+
 zero.onclick = function() {
-    // console.log("here");
-    // var x = zero.textContent;
-    // // inputbar.innerHTML = x;
-    // if (pushEq == true) {
-    //   array_name = [];
-    //   //console.log("39");
-    //   array_name.push(x);
-    //   inputbar.innerHTML = array_name.join("");
-    //   pushEq = false;
-    // }
-    // else {
-    //   array_name.push(x);
-    //   inputbar.innerHTML = array_name.join("");
-    // }
-    myFunction(zero, pushEq);
+    clickDigit(zero, pushEq);
 };
 one.onclick = function() {
-    // console.log("here");
-    // var x = one.textContent;
-    // // inputbar.innerHTML = x;
-    // if (pushEq == true) {
-    //   array_name = [];
-    //   array_name.push(x);
-    //   inputbar.innerHTML = array_name.join("");
-    // }
-    // else {
-    //   array_name.push(x);
-    //   inputbar.innerHTML = array_name.join("");
-    // }
-    myFunction(one, pushEq);
+    clickDigit(one, pushEq);
 };
-
-//one.onclick = myFunction(one, pushEq);
-
 two.onclick = function() {
-    // console.log("here");
-    // var x = two.textContent;
-    // // inputbar.innerHTML = x;
-    // if (pushEq == true) {
-    //   array_name = [];
-    //   array_name.push(x);
-    //   inputbar.innerHTML = array_name.join("");
-    // }
-    // else {
-    //   array_name.push(x);
-    //   inputbar.innerHTML = array_name.join("");
-    // }
-    myFunction(two, pushEq);
+    clickDigit(two, pushEq);
 };
 three.onclick = function() {
-    // console.log("here");
-    // var x = three.textContent;
-    // // inputbar.innerHTML = x;
-    // if (pushEq == true) {
-    //   array_name = [];
-    //   array_name.push(x);
-    //   inputbar.innerHTML = array_name.join("");
-    // }
-    // else {
-    //   array_name.push(x);
-    //   inputbar.innerHTML = array_name.join("");
-    // }
-    myFunction(three, pushEq);
+    clickDigit(three, pushEq);
 };
 four.onclick = function() {
-    // console.log("here");
-    // var x = four.textContent;
-    // // inputbar.innerHTML = x;
-    // if (pushEq == true) {
-    //   array_name = [];
-    //   array_name.push(x);
-    //   inputbar.innerHTML = array_name.join("");
-    // }
-    // else {
-    //   array_name.push(x);
-    //   inputbar.innerHTML = array_name.join("");
-    // }
-    myFunction(four, pushEq);
+    clickDigit(four, pushEq);
 };
 five.onclick = function() {
-    // console.log("here");
-    // var x = five.textContent;
-    // // inputbar.innerHTML = x;
-    // if (pushEq == true) {
-    //   array_name = [];
-    //   array_name.push(x);
-    //   inputbar.innerHTML = array_name.join("");
-    // }
-    // else {
-    //   array_name.push(x);
-    //   inputbar.innerHTML = array_name.join("");
-    // }
-    myFunction(five, pushEq);
+    clickDigit(five, pushEq);
 };
 six.onclick = function() {
-    // console.log("here");
-    // var x = six.textContent;
-    // // inputbar.innerHTML = x;
-    // if (pushEq == true) {
-    //   array_name = [];
-    //   array_name.push(x);
-    //   inputbar.innerHTML = array_name.join("");
-    // }
-    // else {
-    //   array_name.push(x);
-    //   inputbar.innerHTML = array_name.join("");
-    // }
-    myFunction(six, pushEq);
+    clickDigit(six, pushEq);
 };
 seven.onclick = function() {
-    // console.log("here");
-    // var x = seven.textContent;
-    // // inputbar.innerHTML = x;
-    // if (pushEq == true) {
-    //   array_name = [];
-    //   array_name.push(x);
-    //   inputbar.innerHTML = array_name.join("");
-    // }
-    // else {
-    //   array_name.push(x);
-    //   inputbar.innerHTML = array_name.join("");
-    // }
-    myFunction(seven, pushEq);
+    clickDigit(seven, pushEq);
 };
 eight.onclick = function() {
-    // console.log("here");
-    // var x = eight.textContent;
-    // // inputbar.innerHTML = x;
-    // if (pushEq == true) {
-    //   array_name = [];
-    //   array_name.push(x);
-    //   inputbar.innerHTML = array_name.join("");
-    // }
-    // else {
-    //   array_name.push(x);
-    //   inputbar.innerHTML = array_name.join("");
-    // }
-    myFunction(eight, pushEq);
+    clickDigit(eight, pushEq);
 };
 nine.onclick = function() {
-    // console.log("here");
-    // var x = nine.textContent;
-    // // inputbar.innerHTML = x;
-    // if (pushEq == true) {
-    //   array_name = [];
-    //   array_name.push(x);
-    //   inputbar.innerHTML = array_name.join("");
-    // }
-    // else {
-    //   array_name.push(x);
-    //   inputbar.innerHTML = array_name.join("");
-    // }
-    myFunction(nine, pushEq);
+    clickDigit(nine, pushEq);
 };
 lb.onclick = function() {
-    console.log("here");
-    var x = lb.textContent;
-    // inputbar.innerHTML = x;
-    array_name.push(x);
-    inputbar.innerHTML = array_name.join("");
+    clickDigit(lb, pushEq);
 };
 rb.onclick = function() {
-    console.log("here");
-    var x = rb.textContent;
-    // inputbar.innerHTML = x;
-    array_name.push(x);
-    inputbar.innerHTML = array_name.join("");
+    clickDigit(rb, pushEq);
 };
 cbar.onclick = function() {
     console.log("here");
@@ -225,50 +101,19 @@ cbar.onclick = function() {
     resultbar.innerHTML = "ANS = " + result;
 };
 plus.onclick = function() {
-    pushEq = false;
-    console.log("here");
-    var x = plus.textContent;
-    // inputbar.innerHTML = x;
-    array_name.push(x);
-    inputbar.innerHTML = array_name.join("");
+    clickOp(plus, pushEq);
 };
 multiply.onclick = function() {
-    pushEq = false;
-    console.log("here");
-    var x = multiply.textContent;
-    // inputbar.innerHTML = x;
-    array_name.push(x);
-    inputbar.innerHTML = array_name.join("");
+    clickOp(multiply, pushEq);
 };
 divide.onclick = function() {
-    pushEq = false;
-    console.log("here");
-    var x = divide.textContent;
-    // // inputbar.innerHTML = x;
-    array_name.push(x);
-    inputbar.innerHTML = array_name.join("");
+    clickOp(divide, pushEq);
 };
 minus.onclick = function() {
-    pushEq = false;
-    console.log("here");
-    var x = minus.textContent;
-    //// inputbar.innerHTML = x;
-    array_name.push(x);
-    inputbar.innerHTML = array_name.join("");
+    clickOp(minus, pushEq);
 };
 dot.onclick = function() {
-    console.log("here");
-    var x = dot.textContent;
-    if (pushEq == true) {
-      array_name = [];
-      array_name.push(x);
-      inputbar.innerHTML = array_name.join("");
-      pushEq = false;
-    }
-    else {
-      array_name.push(x);
-      inputbar.innerHTML = array_name.join("");
-    }
+    clickDigit(dot,pushEq);
 };
 
 equals.onclick = function() {
@@ -276,7 +121,7 @@ equals.onclick = function() {
     console.log(array_name.join(""));
     var a = array_name.toString;
     a = array_name.join("");
-    resultbar.innerHTML = array_name.join("")+" =";
+    resultbar.innerHTML = array_name.join(" ")+" = ";
     try {
       result = eval(a);
       console.log(result);
@@ -293,14 +138,4 @@ equals.onclick = function() {
       console.log("ERROR");
       inputbar.innerHTML = "ERROR";
     }
-    // console.log(result);
-    // //array_name.push(result);
-    // //resultbar.innerHTML = result;
-    // //array_result.push(array_name.join(""));
-    // array_name = [];
-    // array_name.push(result);
-    // //array_result.push(result);
-    // pushEq = true;
-    // inputbar.innerHTML = result;
-    //resultbar.innerHTML = array_name.join("") + "=";
 }
