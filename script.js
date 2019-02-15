@@ -33,12 +33,12 @@ function clickDigit(button, pushed) {
     array_name = [];
     resultbar.innerHTML = "ANS = " + inputbar.innerHTML;
     array_name.push(x);
-    inputbar.innerHTML = array_name.join(" ");
+    inputbar.innerHTML = array_name.join("");
     pushEq = false;
   }
   else {
     array_name.push(x);
-    inputbar.innerHTML = array_name.join(" ");
+    inputbar.innerHTML = array_name.join("");
   }
 }
 
@@ -49,7 +49,7 @@ function clickOp(button, pushed) {
   pushEq = false;
   var x = button.textContent;
   array_name.push(x);
-  inputbar.innerHTML = array_name.join(" ");
+  inputbar.innerHTML = array_name.join("");
 }
 
 zero.onclick = function() {
@@ -89,13 +89,10 @@ rb.onclick = function() {
     clickDigit(rb, pushEq);
 };
 cbar.onclick = function() {
-    console.log("here");
     var x = cbar.textContent;
     inputbar.innerHTML = "CLEAR";
-    //array_name = [];
     array_name.pop();
     inputbar.innerHTML = array_name.join("");
-    console.log(array_name);
     resultbar.innerHTML = "ANS = " + result;
 };
 plus.onclick = function() {
@@ -115,25 +112,17 @@ dot.onclick = function() {
 };
 
 equals.onclick = function() {
-    console.log(array_name.toString());
-    console.log(array_name.join(""));
     var a = array_name.toString;
     a = array_name.join("");
-    resultbar.innerHTML = array_name.join(" ")+" = ";
+    resultbar.innerHTML = array_name.join("")+" = ";
     try {
       result = eval(a);
-      console.log(result);
-      //array_name.push(result);
-      //resultbar.innerHTML = result;
-      //array_result.push(array_name.join(""));
       array_name = [];
       array_name.push(result);
-      //array_result.push(result);
       pushEq = true;
       inputbar.innerHTML = result;
     }
     catch(err) {
-      console.log("ERROR");
       inputbar.innerHTML = "ERROR";
     }
 }
