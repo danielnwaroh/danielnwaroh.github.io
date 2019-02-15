@@ -1,4 +1,4 @@
-alert('SENG 513 A2 by Daniel Nwaroh');
+// alert('SENG 513 A2 by Daniel Nwaroh');
 
 var inputbar = document.getElementById('inputbar'),
 resultbar = document.getElementById('resultbar'),
