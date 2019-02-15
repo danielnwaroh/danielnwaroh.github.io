@@ -46,23 +46,24 @@ function myFunction(button, pushed) {
 }
 
 zero.onclick = function() {
-    console.log("here");
-    var x = zero.textContent;
-    // inputbar.innerHTML = x;
-    if (pushEq == true) {
-      array_name = [];
-      //console.log("39");
-      array_name.push(x);
-      inputbar.innerHTML = array_name.join("");
-      pushEq = false;
-    }
-    else {
-      array_name.push(x);
-      inputbar.innerHTML = array_name.join("");
-    }
+    // console.log("here");
+    // var x = zero.textContent;
+    // // inputbar.innerHTML = x;
+    // if (pushEq == true) {
+    //   array_name = [];
+    //   //console.log("39");
+    //   array_name.push(x);
+    //   inputbar.innerHTML = array_name.join("");
+    //   pushEq = false;
+    // }
+    // else {
+    //   array_name.push(x);
+    //   inputbar.innerHTML = array_name.join("");
+    // }
+    myFunction(zero, pushEq);
 };
 one.onclick = function() {
-    console.log("here");
+    // console.log("here");
     // var x = one.textContent;
     // // inputbar.innerHTML = x;
     // if (pushEq == true) {
@@ -76,117 +77,128 @@ one.onclick = function() {
     // }
     myFunction(one, pushEq);
 };
+
+//one.onclick = myFunction(one, pushEq);
+
 two.onclick = function() {
-    console.log("here");
-    var x = two.textContent;
-    // inputbar.innerHTML = x;
-    if (pushEq == true) {
-      array_name = [];
-      array_name.push(x);
-      inputbar.innerHTML = array_name.join("");
-    }
-    else {
-      array_name.push(x);
-      inputbar.innerHTML = array_name.join("");
-    }
+    // console.log("here");
+    // var x = two.textContent;
+    // // inputbar.innerHTML = x;
+    // if (pushEq == true) {
+    //   array_name = [];
+    //   array_name.push(x);
+    //   inputbar.innerHTML = array_name.join("");
+    // }
+    // else {
+    //   array_name.push(x);
+    //   inputbar.innerHTML = array_name.join("");
+    // }
+    myFunction(two, pushEq);
 };
 three.onclick = function() {
-    console.log("here");
-    var x = three.textContent;
-    // inputbar.innerHTML = x;
-    if (pushEq == true) {
-      array_name = [];
-      array_name.push(x);
-      inputbar.innerHTML = array_name.join("");
-    }
-    else {
-      array_name.push(x);
-      inputbar.innerHTML = array_name.join("");
-    }
+    // console.log("here");
+    // var x = three.textContent;
+    // // inputbar.innerHTML = x;
+    // if (pushEq == true) {
+    //   array_name = [];
+    //   array_name.push(x);
+    //   inputbar.innerHTML = array_name.join("");
+    // }
+    // else {
+    //   array_name.push(x);
+    //   inputbar.innerHTML = array_name.join("");
+    // }
+    myFunction(three, pushEq);
 };
 four.onclick = function() {
-    console.log("here");
-    var x = four.textContent;
-    // inputbar.innerHTML = x;
-    if (pushEq == true) {
-      array_name = [];
-      array_name.push(x);
-      inputbar.innerHTML = array_name.join("");
-    }
-    else {
-      array_name.push(x);
-      inputbar.innerHTML = array_name.join("");
-    }
+    // console.log("here");
+    // var x = four.textContent;
+    // // inputbar.innerHTML = x;
+    // if (pushEq == true) {
+    //   array_name = [];
+    //   array_name.push(x);
+    //   inputbar.innerHTML = array_name.join("");
+    // }
+    // else {
+    //   array_name.push(x);
+    //   inputbar.innerHTML = array_name.join("");
+    // }
+    myFunction(four, pushEq);
 };
 five.onclick = function() {
-    console.log("here");
-    var x = five.textContent;
-    // inputbar.innerHTML = x;
-    if (pushEq == true) {
-      array_name = [];
-      array_name.push(x);
-      inputbar.innerHTML = array_name.join("");
-    }
-    else {
-      array_name.push(x);
-      inputbar.innerHTML = array_name.join("");
-    }
+    // console.log("here");
+    // var x = five.textContent;
+    // // inputbar.innerHTML = x;
+    // if (pushEq == true) {
+    //   array_name = [];
+    //   array_name.push(x);
+    //   inputbar.innerHTML = array_name.join("");
+    // }
+    // else {
+    //   array_name.push(x);
+    //   inputbar.innerHTML = array_name.join("");
+    // }
+    myFunction(five, pushEq);
 };
 six.onclick = function() {
-    console.log("here");
-    var x = six.textContent;
-    // inputbar.innerHTML = x;
-    if (pushEq == true) {
-      array_name = [];
-      array_name.push(x);
-      inputbar.innerHTML = array_name.join("");
-    }
-    else {
-      array_name.push(x);
-      inputbar.innerHTML = array_name.join("");
-    }
+    // console.log("here");
+    // var x = six.textContent;
+    // // inputbar.innerHTML = x;
+    // if (pushEq == true) {
+    //   array_name = [];
+    //   array_name.push(x);
+    //   inputbar.innerHTML = array_name.join("");
+    // }
+    // else {
+    //   array_name.push(x);
+    //   inputbar.innerHTML = array_name.join("");
+    // }
+    myFunction(six, pushEq);
 };
 seven.onclick = function() {
-    console.log("here");
-    var x = seven.textContent;
-    // inputbar.innerHTML = x;
-    if (pushEq == true) {
-      array_name = [];
-      array_name.push(x);
-      inputbar.innerHTML = array_name.join("");
-    }
-    else {
-      array_name.push(x);
-      inputbar.innerHTML = array_name.join("");
-    }
+    // console.log("here");
+    // var x = seven.textContent;
+    // // inputbar.innerHTML = x;
+    // if (pushEq == true) {
+    //   array_name = [];
+    //   array_name.push(x);
+    //   inputbar.innerHTML = array_name.join("");
+    // }
+    // else {
+    //   array_name.push(x);
+    //   inputbar.innerHTML = array_name.join("");
+    // }
+    myFunction(seven, pushEq);
 };
 eight.onclick = function() {
-    console.log("here");
-    var x = eight.textContent;
-    // inputbar.innerHTML = x;
-    if (pushEq == true) {
-      array_name = [];
-      array_name.push(x);
-      inputbar.innerHTML = array_name.join("");
-    }
-    else {
-      array_name.push(x);
-      inputbar.innerHTML = array_name.join("");
-    }
+    // console.log("here");
+    // var x = eight.textContent;
+    // // inputbar.innerHTML = x;
+    // if (pushEq == true) {
+    //   array_name = [];
+    //   array_name.push(x);
+    //   inputbar.innerHTML = array_name.join("");
+    // }
+    // else {
+    //   array_name.push(x);
+    //   inputbar.innerHTML = array_name.join("");
+    // }
+    myFunction(eight, pushEq);
 };
 nine.onclick = function() {
-    console.log("here");
-    var x = nine.textContent;
-    // inputbar.innerHTML = x;
-    if (pushEq == true) {
-      array_name = [];
-      array_name.push(x);
-      inputbar.innerHTML = array_name.join("");
-    }
-    else {
-      array_name.push(x);
-      inputbar.innerHTML = array_name.join("");
-    }
+    // console.log("here");
+    // var x = nine.textContent;
+    // // inputbar.innerHTML = x;
+    // if (pushEq == true) {
+    //   array_name = [];
+    //   array_name.push(x);
+    //   inputbar.innerHTML = array_name.join("");
+    // }
+    // else {
+    //   array_name.push(x);
+    //   inputbar.innerHTML = array_name.join("");
+    // }
+    myFunction(nine, pushEq);
 };
 lb.onclick = function() {
     console.log("here");
