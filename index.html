@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <style>
+      * {
+          /* height: 100%; */
+          padding: 0;
+          margin: 0;
+        }
+        html, body {
+          height: 100%;
+          width: 100%;
+        }
+        .title {
+          grid-column-start: 1;
+          grid-column-end: 4;
+          text-align: center;
+        }
+        .chatWrap {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          background-color: #d3d3d3;
+          border: solid;
+          position: relative;
+        }
+        .userWrap {
+          grid-column-start: 3;
+          grid-column-end: 4;
+          background-color: #d3d3d3;
+          border: solid;
+        }
+        .textWrap {
+          grid-column-start: 1;
+          grid-column-end: 4;
+          border: solid;
+
+        }
+        .grid-container {
+          display: grid;
+          grid-template-columns: auto auto auto;
+          grid-template-rows: 10% 80% 10%;
+          height: 100%;
+        }
+
+        .grid-container > div {
+          font: 25px Helvetica, Arial;
+        }
+        #m {
+          width: 90%;
+        }
+        #messages, #users {
+          font: 17px Helvetica, Arial;
+        }
+        #messages {
+          position: absolute;
+          bottom: 0px;
+          max-height: 85%;
+          overflow-y: auto;
+          width: 100%;
+          flex-direction: column;
+        }
+
+        .ex3 {
+          /* height: 75px;
+          width: inherit; */
+          display: flex;
+          flex-direction: column-reverse;
+          /* overflow-y: auto; */
+          /* max-height: 90%; */
+          top: 10px;
+          bottom:10px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="title">WHATSAPP 2.0</div>
+      <div class="chatWrap">
+        <u>Chat-Room</u>
+        <p id="ppl"></p>
+        <div class="grandpa">
+          <div class="ex3">
+            <ul id="messages"></ul>
+          </div>
+        </div>
+      </div>
+      <div class="userWrap">
+        <u>Users</u>
+        <ul id="users"></ul>
+      </div>
+      <div class="textWrap">
+        <form action="">
+          <input id="m" autocomplete="off" /><button>Send</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+      $(function () {
+        var socket = io();
+        $('form').submit(function(e){
+          e.preventDefault(); // prevents page reloading
+          socket.emit('chat message', $('#m').val());
+          $('#m').val('');
+          return false;
+        });
+        socket.on('chat message', function(msg){
+          var arr=[];
+          var b = msg.nameofuser;
+          console.log("COLOR: "+msg.color);
+          $('#messages').append($('<li>').html(msg.time+" "+b.fontcolor(msg.color)+": "+msg.actmsg));
+          arr.push(msg.time+" "+msg.nameofuser+": "+msg.actmsg);
+          console.log(typeof msg.actmsg);
+          var x = msg.actmsg.substring(0,5);
+          // if (x==="/nick") {
+          //   console.log("/nick");
+          //   var a = msg.actmsg.slice(5,msg.actmsg.length);
+          //   $('#ppl').html(a);
+          // }
+          console.log("HERE: "+msg.nameofuser);
+          console.log(arr);
+        });
+        socket.on('usernames', function(data) {
+          var html='';
+          for(i=0; i<data.length; i++) {
+            html += data[i] + '<br/>';
+          }
+          console.log(html);
+          $('#users').html(html);
+        });
+        socket.on('current user', function(msg){
+          $('#ppl').html(msg);
+        });
+        socket.on('load history', function(data) {
+          for (i=0; i<data.length; i++) {
+            $('#messages').append($('<li>').html(data[i][0]+" "+data[i][1].fontcolor(data[i][3])+": "+data[i][2]));
+            console.log(data[i][0]+" "+data[i][1]+": "+data[i][2]);
+          }
+        });
+        socket.on('bad name', function(data){
+          alert('Cant change nickname, that name is alreayd taken');
+        });
+        
+      });
+    </script>
+  </body>
+</html>
