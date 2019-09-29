@@ -19,6 +19,7 @@
  *  11. about
  *  12. resume
  *  13. portfolio
+ *  13a. portfolio
  *  14. call-to-action section
  *  15. services
  *  16. stats
@@ -1626,8 +1627,137 @@ header .logo a {
  *
  * -------------------------------------------------------------------
  */
-#interests {
+#projects {
 	background: #FFFFFF;
+	padding-top: 12rem;
+	padding-bottom: 15rem;
+}
+#projects .section-intro {
+	margin-bottom: 3rem;
+}
+
+.intro-info {
+	margin-top: 4.2rem;
+	margin-right: -30px;
+	margin-left: -30px;
+}
+.intro-info img {
+	/* height: 30rem;
+	width: 20rem; */
+	height: 9rem;
+	width: 9rem;
+	border-radius: 50%;
+	/* border-radius: 5%; */
+	margin: .9rem 0 0 0;
+	float: left;
+	padding-right: 5px;
+}
+.intro-info .lead {
+	text-align: left;
+	padding-left: 13rem;
+}
+
+.interests-content {
+	position: relative;
+	text-align: left;
+	max-width: 850px;
+	margin-bottom: 3.6rem;
+}
+.interests-content h3 {
+	font-family: "poppins-bold", sans-serif;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	letter-spacing: .25rem;
+}
+.interests-content .info-list {
+	list-style: none;
+	margin-left: 0;
+}
+.interests-content .info-list li {
+	padding: 0 0 1.5rem 0;
+	margin-bottom: .6rem;
+}
+.interests-content .info-list li strong {
+	font-family: "poppins-bold", sans-serif;
+	color: #313131;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	font-size: 1.5rem;
+	line-height: 3rem;
+}
+.interests-content .info-list li span {
+	display: block;
+	font-family: "poppins-regular", sans-serif;
+	color: #888888;
+	font-size: 1.5rem;
+	line-height: 1;
+}
+.interests-content .skill-bars {
+	margin-top: 6rem;
+}
+
+.button-section {
+	text-align: center;
+}
+.button-section .button {
+	width: 250px;
+}
+.button-section [class*="col-"] .button:first-child {
+	margin-right: 4rem;
+}
+
+/**
+ * responsive:
+ * interests
+ * -------------------------------------------------------------------
+ */
+@media only screen and (max-width:1024px) {
+	.intro-info {
+		margin-right: 0;
+		margin-left: 0;
+	}
+}
+@media only screen and (max-width:768px) {
+	.intro-info img {
+		height: 7.8rem;
+		width: 7.8rem;
+	}
+	.intro-info .lead {
+		padding-left: 11rem;
+	}
+	.interests-content h3 {
+		text-align: center;
+	}
+	.interests-content .info-list, .interests-content .skill-bars {
+		margin-bottom: 4.2rem;
+	}
+	.button-section .button {
+		width: 100%;
+		margin-bottom: 3rem;
+	}
+	.button-section [class*="col-"] .button:first-child {
+		margin-right: 0;
+	}
+}
+@media only screen and (max-width:600px) {
+	.intro-info {
+		text-align: center;
+		margin-top: 3rem;
+	}
+	.intro-info img {
+		height: 8.6rem;
+		width: 8.6rem;
+		float: none;
+		display: inline-block;
+	}
+	.intro-info .lead {
+		padding-left: 0;
+		text-align: center;
+	}
+}
+
+#interests {
+	background: #ebebeb;
 	padding-top: 12rem;
 	padding-bottom: 15rem;
 }
