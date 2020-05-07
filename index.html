@@ -1,490 +1,675 @@
-<!DOCTYPE html>
-<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-	<title>Daniel Nwaroh</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
-  <meta property="og:title" content="Personal Website of Daniel Nwaroh" />
-  <meta property="og:image" content="mylogo.png" />
-  <meta property="og:description" content="Personal Website, still in development" />
+<!DOCTYPE html> <!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <title>Daniel Nwaroh</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta property="og:title" content="Personal Website of Daniel Nwaroh" />
+    <meta property="og:image" content="mylogo.png" />
+    <meta
+      property="og:description"
+      content="Personal Website, still in development"
+    />
 
-  <!-- mobile specific metas
+    <!-- mobile specific metas
    ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
 
- 	<!-- CSS
+    <!-- CSS
    ================================================== -->
-   <link rel="stylesheet" href="css/base.css">
-   <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/vendor.css" />
 
-   <!-- script
+    <!-- script
    ================================================== -->
-	<script src="js/modernizr.js"></script>
-	<script src="js/pace.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+  </head>
 
+  <body id="top">
+    <header>
+      <div class="row">
+        <div class="top-bar">
+          <a class="menu-toggle" href="#"><span>Menu</span> </a>
 
-   <!-- favicons
-	================================================== -->
-	<!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+          <div class="logo">
+            <!-- image of something -->
+            <a href="index.html">SOMESTUFF</a>
+          </div>
 
-</head>
+          <nav id="main-nav-wrap">
+            <ul class="main-navigation">
+              <li class="current">
+                <a class="smoothscroll" href="#intro" title="">Home</a>
+              </li>
+              <li>
+                <a class="smoothscroll" href="#about" title="">About Me</a>
+              </li>
+              <li>
+                <a class="smoothscroll" href="#education" title="">Education</a>
+              </li>
+              <li>
+                <a class="smoothscroll" href="#courses" title="">Courses</a>
+              </li>
+              <li>
+                <a class="smoothscroll" href="#portfolios" title="">Projects</a>
+              </li>
+              <li>
+                <a class="smoothscroll" href="#interests" title="">Interests</a>
+              </li>
+              <li>
+                <a class="smoothscroll" href="#contact" title="">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- /row -->
+    </header>
 
-<body id="top">
-  <!-- header
+    <section id="intro">
+      <div class="intro-overlay"></div>
+      <div class="intro-content">
+        <div class="row">
+          <div class="col-twelve">
+            <h1>I am Daniel Nwaroh.</h1>
+
+            <p class="intro-position">
+              <span>Optimist</span>
+              <span>Aspiring Computer Scientist</span>
+              <span>Sports Fan</span>
+              <span>Innovator</span>
+            </p>
+            <h2>
+              "Failure is not falling, failure is falling and not getting up"
+            </h2>
+
+            <a class="button stroke smoothscroll" href="#about" title=""
+              >More About Me</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <ul class="intro-social">
+        <li>
+          <a href="https://www.linkedin.com/in/daniel-nwaroh-ab962a96/"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/daniel-nwaroh-ab962a96/"
+            ><i class="fa fa-github"></i
+          ></a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- about me
    ================================================== -->
-   <header>
-   	<div class="row">
-
-   		<div class="top-bar">
-   			<a class="menu-toggle" href="#"><span>Menu</span></a>
-
-	   		<div class="logo">
-          <!-- image of something -->
-          <a href="index.html">SOMESTUFF</a>
-		    </div>
-
-		   	<nav id="main-nav-wrap">
-					<ul class="main-navigation">
-						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
-						<li><a class="smoothscroll"  href="#about" title="">About Me</a></li>
-						<li><a class="smoothscroll"  href="#education" title="">Education</a></li>
-            <li><a class="smoothscroll"  href="#portfolio" title="">Courses</a></li>
-						<li><a class="smoothscroll"  href="#portfolios" title="">Projects</a></li>
-            <li><a class="smoothscroll"  href="#interests" title="">Interests</a></li>
-						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>
-					</ul>
-				</nav>
-   		</div> <!-- /top-bar -->
-
-   	</div> <!-- /row -->
-   </header>
-   <section id="intro">
-     <div class="intro-overlay"></div>
-     <div class="intro-content">
-   		<div class="row">
-
-   			<div class="col-twelve">
-
-	   			<h1>I am Daniel Nwaroh.</h1>
-
-	   			<p class="intro-position">
-            <span>Optimist</span>
-	   				<span>Aspiring Computer Scientist</span>
-            <span>Sports Fan</span>
-            <span>Innovator</span>
-	   			</p>
-          <h2>"Failure is not falling, failure is falling and not getting up"</h2>
-
-	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
-
-	   		</div>
-
-   		</div>
-   	</div>
-
-    <ul class="intro-social">
-      <li><a href="https://www.linkedin.com/in/daniel-nwaroh-ab962a96/"><i class="fa fa-linkedin"></i></a></li>
-      <li><a href="https://www.linkedin.com/in/daniel-nwaroh-ab962a96/"><i class="fa fa-github"></i></a></li>
-    </ul>
-   </section>
-
-   <!-- about me
-   ================================================== -->
-   <section id="about">
-     <div class="row section-intro">
-       <div class="col-twelve">
-         <h5> About Me </h5>
-         <h1> "Allow me to re-introduce myself" </h1>
-         <div class="intro-info">
-           <!-- Sort out image sizing -->
-           <img src="./Webp.net-resizeimage.jpg" alt="Profile Picture">
-           <p class="lead">My name is Daniel Nwaroh. I am an undergraduate student at the University of Calgary,
-             currently in my 3rd year of my Bachelor of Science Degree in Computer Science with a Concentration in Software Engineering. </p>
-         </div>
-       </div>
-     </div>
-     <div class="row about-content">
-       <div class="col-six tab-full">
-         <!-- <h3>Profile</h3>
+    <section id="about">
+      <div class="row section-intro">
+        <div class="col-twelve">
+          <h5>About Me</h5>
+          <h1>"Allow me to re-introduce myself"</h1>
+          <div class="intro-info">
+            <!-- Sort out image sizing -->
+            <img src="./Webp.net-resizeimage.jpg" alt="Profile Picture" />
+            <p class="lead">
+              My name is Daniel Nwaroh. I am an undergraduate student at the
+              University of Calgary, currently in my 3rd year of my Bachelor of
+              Science Degree in Computer Science with a Concentration in
+              Software Engineering.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row about-content">
+        <div class="col-six tab-full">
+          <!-- <h3>Profile</h3>
          <p>Here is my profile</p> -->
-         <ul class="info-list">
-           <li>
-             <strong>Name:</strong>
-             <span>Daniel Nwaroh</span>
-           </li>
-           <!-- <li>
+          <ul class="info-list">
+            <li>
+              <strong>Name:</strong>
+              <span>Daniel Nwaroh</span>
+            </li>
+            <!-- <li>
              <strong>Birthday:</strong>
              <span>June 16, 1998</span>
            </li> -->
-           <li>
-             <strong>Email</strong>
-             <span>daniel.nwaroh@gmail.com</span>
-             <span>daniel.nwaroh@ucalgary.ca</span>
-           </li>
-           <li>
-             <strong>Interests:</strong>
-             <span>Mobile Application Development</span>
-             <span>Web Development</span>
-             <span>Data Analysis</span>
-             <span>Task Automation</span>
-             <span>Innovation & Technology</span>
-             <span>Sports Statistics</span>
-             <span>NBA</span>
-             <span>NFL</span>
-             <span>Soccer</span>
-             <span>Music</span>
-             <span>Database Management</span>
-             <span>Data Visualization</span>
-             <span>Machine Learning</span>
-           </li>
-         </ul>
-       </div>
-       <div class="col-six tab-full">
-         <h3>Skills</h3>
-         <ul class="skill-bars">
-           <li>
-             <div class="progress percent95">
-               <span>95%</span>
-             </div>
-             <strong>Java</strong>
-           </li>
-           <li>
-             <div class="progress percent75">
-               <span>75%</span>
-             </div>
-             <strong>C#</strong>
-           </li>
-           <li>
-             <div class="progress percent95">
-               <span>95%</span>
-             </div>
-             <strong>JavaScript</strong>
-           </li>
-           <li>
-             <div class="progress percent85">
-               <span>85%</span>
-             </div>
-             <strong>HTML</strong>
-           </li>
-           <li>
-             <div class="progress percent85">
-               <span>85%</span>
-             </div>
-             <strong>React</strong>
-           </li>
-           <li>
-             <div class="progress percent80">
-               <span>80%</span>
-             </div>
-             <strong>Python</strong>
-           </li>
-           <p>Other skills include: XML | C++ | Prolog | React | Flutter | Database Work | d3js</p>
-         </ul>
-       </div>
-     </div>
-     <div class="row button-section">
-       <div class="col-twelve">
-         <a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
-         <a href="resume.pdf" title="Download CV" class="button stroke" download>Download Resume</a>
-         <!-- <a href="#" class="button stroke smoothscroll" download>YO PIERRE</a> -->
-         <!-- <embed src="resume.pdf" width="800px" height="2100px" /> -->
-       </div>
-     </div>
-   </section>
+            <li>
+              <strong>Email</strong>
+              <span>daniel.nwaroh@gmail.com</span>
+              <!--              <span>daniel.nwaroh@ucalgary.ca</span>-->
+            </li>
+            <li>
+              <strong>Interests:</strong>
+              <span>Mobile Application Development</span>
+              <span>Web Development</span>
+              <span>Data Analysis</span>
+              <span>Task Automation</span>
+              <span>Innovation & Technology</span>
+              <span>Sports Statistics</span>
+              <span>NBA</span>
+              <span>NFL</span>
+              <span>Soccer</span>
+              <span>Music</span>
+              <span>Database Management</span>
+              <span>Data Visualization</span>
+              <span>Machine Learning</span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-six tab-full">
+          <h3>Skills</h3>
+          <ul class="skill-bars">
+            <li>
+              <div class="progress percent95">
+                <span>95%</span>
+              </div>
+              <strong>Java</strong>
+            </li>
+            <li>
+              <div class="progress percent75">
+                <span>75%</span>
+              </div>
+              <strong>C#</strong>
+            </li>
+            <li>
+              <div class="progress percent95">
+                <span>95%</span>
+              </div>
+              <strong>JavaScript</strong>
+            </li>
+            <li>
+              <div class="progress percent90">
+                <span>90%</span>
+              </div>
+              <strong>HTML</strong>
+            </li>
+            <li>
+              <div class="progress percent85">
+                <span>85%</span>
+              </div>
+              <strong>React</strong>
+            </li>
+            <li>
+              <div class="progress percent80">
+                <span>80%</span>
+              </div>
+              <strong>Python</strong>
+            </li>
+            <p>
+              Other skills include: Django | .NET | Angular | Flutter | Database
+              Management | D3 | Tableau
+            </p>
+          </ul>
+        </div>
+      </div>
+      <div class="row button-section">
+        <div class="col-twelve">
+          <a href="#contact" title="Hire Me" class="button stroke smoothscroll"
+            >Hire Me</a
+          >
+          <a
+            href="resume.pdf"
+            title="Download CV"
+            class="button stroke"
+            target="_blank"
+            >Download Resume</a
+          >
+        </div>
+      </div>
+    </section>
 
-   <section id="education" class="grey-section">
-     <div class="row resume-timeline">
-       <div class="col-twelve resume-header">
-         <h2>Education</h2>
-       </div>
-       <div class="col-twelve">
-         <div class="timeline-wrap">
-           <div class="timeline-block">
-             <div class="timeline-ico">
-               <i class="fa fa-book" style="font-size:24px"></i>
-             </div>
-             <div class="timeline-header">
-               <h3>Bachelor Degree</h3>
-               <p>September 2016 - PRESENT</p>
-             </div>
-             <div class="timeline-content">
-               <h4>University of Calgary</h4>
-               <p>B.Sc. in Computer Science, Concentration in Software Engineering</p>
-             </div>
-           </div>
-           <div class="timeline-block">
-             <div class="timeline-ico">
-               <i class="fa fa-book" style="font-size:24px"></i>
-             </div>
-             <div class="timeline-header">
-               <h3>Highschool Diploma</h3>
-               <p>September 2013 - June 2016</p>
-             </div>
-             <div class="timeline-content">
-               <h4>St. Francis Highschool</h4>
-               <p>Highschool Diploma at St. Francis Highschool in Calgary, Alberta </p>
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
-   </section>
+    <section id="education" class="grey-section">
+      <div class="row resume-timeline">
+        <div class="col-twelve resume-header">
+          <h2>Education</h2>
+        </div>
+        <div class="col-twelve">
+          <div class="timeline-wrap">
+            <div class="timeline-block">
+              <div class="timeline-ico">
+                <i class="fa fa-book" style="font-size: 24px;"></i>
+              </div>
+              <div class="timeline-header">
+                <h3>Highschool Diploma</h3>
+                <p>September 2013 - June 2016</p>
+              </div>
+              <div class="timeline-content">
+                <h4>St. Francis Highschool</h4>
+                <p>
+                  Highschool Diploma at St. Francis Highschool in Calgary,
+                  Alberta
+                </p>
+              </div>
+            </div>
+            <div class="timeline-block">
+              <div class="timeline-ico">
+                <i class="fa fa-book" style="font-size: 24px;"></i>
+              </div>
+              <div class="timeline-header">
+                <h3>Bachelor Degree</h3>
+                <p>September 2016 - PRESENT</p>
+              </div>
+              <div class="timeline-content">
+                <h4>University of Calgary</h4>
+                <p>
+                  B.Sc. in Computer Science, Concentration in Software
+                  Engineering
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-   <section id="about">
-     <div class="row section-intro">
-       <div class="col-twelve">
-         <h5> Courses </h5>
-         <h1> Significant Courses taken During Undergraduate Degree </h1>
-         <div class="intro-info">
-         </div>
-       </div>
-     </div>
-     <div class="row about-content">
-       <div class="col-six tab-full">
-         <ul class="info-list">
-           <li>
-             <strong style="font-size:13px"> Data Structures, Algorithms, & Analysis </strong>
-             <span style="font-size:17px"> Introducuctory course about complex and fundamental data structures such as arrays, trees, hash tables, graphs. And exploring algorithms for searching and sorting.</span>
-           </li>
-           <li>
-             <strong style="font-size:13px"> Introduction to Software Engineering </strong>
-             <span style="font-size:17px"> Introduction to the development/evolution of software and the techniques used in the different phases of the software lifecycle. </span>
-           </li>
-           <li>
-             <strong style="font-size:13px"> Principles of Operating Systems </strong>
-             <span style="font-size:17px"> An introductory course to operating systems principles. Performance measurement; concurrent programs; the management of information, memory and processor resources. </span>
-           </li>
-           <li>
-             <strong style="font-size:13px"> Programming Paradigms </strong>
-             <span style="font-size:17px"> Course focused on the principles of different programming language paradigms. The three languages we looked at were Haskell, Prolog and Java. Within these languages we explored topics such as data types, lazy evaluation, information hiding and each of their different interpretation principles.</span>
-           </li>
-           <li>
-             <strong style="font-size:13px"> Design and Analysis of Algorithms I </strong>
-             <span style="font-size:17px"> Course was based around the different techniques for the analysizing algorithms and designing efficient algorithms. For design we focused on greedy methods, divide and conquer and dynamic programming   </span>
-           </li>
-         </ul>
-       </div>
-       <div class="col-six tab-full">
-         <ul class="info-list">
-           <li>
-             <strong style="font-size:13px"> Software Entrepreneurship </strong>
-             <span style="font-size:17px"> Development of business models, building software prototypes and creation of pitch presentations to create a software-based business. </span>
-           </li>
-           <li>
-             <strong style="font-size:13px"> Web Based Systems </strong>
-             <span style="font-size:17px"> An overview of software engineering methods and technologies for developing web-based software systems. </span>
-           </li>
-           <li>
-             <strong style="font-size:13px"> Computer Networks </strong>
-             <span style="font-size:17px"> Course about the key principles and practice in modern telecommunications and networks. Such as communication protocols, data links, network and internet protocol layers. Also circuit and packet switching. </span>
-           </li>
-           <li>
-             <strong style="font-size:13px"> Human Computer Interaction </strong>
-             <span style="font-size:17px"> This course focused on the fundamental theory and practice of the design, implementation, and evaluation of human-computer interfaces. This included things like principles of design; methods for evaluating interfaces with or without user involvement; and prototyping.</span>
-           </li>
-         </ul>
-       </div>
+    <section id="courses">
+      <div class="row section-intro">
+        <div class="col-twelve">
+          <h5>Courses</h5>
+          <h1>Significant Courses taken During Undergraduate Degree</h1>
+          <div class="intro-info"></div>
+        </div>
+      </div>
+      <div class="row about-content">
+        <div class="col-six tab-full">
+          <ul class="info-list">
+            <li>
+              <strong style="font-size: 13px;">
+                Data Structures, Algorithms, & Analysis
+              </strong>
+              <span style="font-size: 17px;">
+                Introducuctory course about complex and fundamental data
+                structures such as arrays, trees, hash tables, graphs. And
+                exploring algorithms for searching and sorting.</span
+              >
+            </li>
+            <li>
+              <strong style="font-size: 13px;">
+                Database Management Systems
+              </strong>
+              <span style="font-size: 17px;">
+                Course about conceptual, internal and external data bases.
+                Relational data base systems and SQL. The normal forms, data
+                base design, and the entity-relationship approach.
+              </span>
+            </li>
+            <li>
+              <strong style="font-size: 13px;">
+                Principles of Operating Systems
+              </strong>
+              <span style="font-size: 17px;">
+                An introductory course to operating systems principles.
+                Performance measurement; concurrent programs; the management of
+                information, memory and processor resources.
+              </span>
+            </li>
+            <li>
+              <strong style="font-size: 13px;">
+                Design and Analysis of Algorithms I
+              </strong>
+              <span style="font-size: 17px;">
+                Course was based around the different techniques for the
+                analyzing algorithms and designing efficient algorithms. For
+                design we focused on greedy methods, divide and conquer and
+                dynamic programming
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-six tab-full">
+          <ul class="info-list">
+            <li>
+              <strong style="font-size: 13px;">
+                Software Entrepreneurship
+              </strong>
+              <span style="font-size: 17px;">
+                Development of business models, building software prototypes and
+                creation of pitch presentations to create a software-based
+                business.
+              </span>
+            </li>
+            <li>
+              <strong style="font-size: 13px;"> Web Based Systems </strong>
+              <span style="font-size: 17px;">
+                An overview of software engineering methods and technologies for
+                developing web-based software systems.
+              </span>
+            </li>
+            <li>
+              <strong style="font-size: 13px;"> Computer Networks </strong>
+              <span style="font-size: 17px;">
+                Course about the key principles and practice in modern
+                telecommunications and networks. Such as communication
+                protocols, data links, network and internet protocol layers.
+                Also circuit and packet switching.
+              </span>
+            </li>
+            <li>
+              <strong style="font-size: 13px;">
+                Human Computer Interaction
+              </strong>
+              <span style="font-size: 17px;">
+                This course focused on the fundamental theory and practice of
+                the design, implementation, and evaluation of human-computer
+                interfaces. This included things like principles of design;
+                methods for evaluating interfaces with or without user
+                involvement; and prototyping.</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-     </div>
+    <section id="portfolio">
+      <div class="row section-intro">
+        <div class="col-twelve">
+          <h5>Work Experience</h5>
+          <div class="timeline-block">
+            <div class="timeline-ico">
+              <i class="fa fa-briefcase" style="font-size: 24px;"></i>
+            </div>
+            <div class="timeline-header">
+              <h3>O2 Planning + Design</h3>
+              <p>April 2019 - December 2019</p>
+            </div>
+            <div class="timeline-content">
+              <h4>Software Developer Intern</h4>
+              <!-- <p>What I did</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-   </section>
+    <section id="projects">
+      <div class="row section-intro">
+        <div class="col-twelve">
+          <h5>Projects</h5>
+          <div class="row about-content">
+            <div class="col-twelve tab-full">
+              <ul class="info-list">
+                <li>
+                  <strong style="font-size: 13px;">
+                    Raspberry PI: Arkanoid Game
+                  </strong>
+                  <span style="font-size: 17px;">
+                    A video game created as an assignment. It was coded
+                    completely using ARM Assembly on Raspberry Pi 3. The game
+                    itself is playable with a SNES controller. Completed with
+                    two other classmates.
+                    <a
+                      href="https://github.com/danielnwaroh/Arkanoid"
+                      target="_blank"
+                      >GitHub Link</a
+                    ></span
+                  >
+                </li>
+                <li>
+                  <strong style="font-size: 13px;">
+                    Java Game: Astro Jump
+                  </strong>
+                  <span style="font-size: 17px;">
+                    A semester-long project which was a live-action game coded
+                    in Java, which uses GUI, and multiple other graphical
+                    implementations. Done as a class project in the first year
+                    of the program. Completed with other members of my group.
+                    <a
+                      href="https://github.com/danielnwaroh/AstroJump"
+                      target="_blank"
+                      >GitHub Link</a
+                    ></span
+                  >
+                </li>
+                <li>
+                  <strong style="font-size: 13px;">
+                    Hackathon Project: Lynck
+                  </strong>
+                  <span style="font-size: 17px;">
+                    As a Hackathon project, my team and I created a website that
+                    would help parents communicate with teachers easier and
+                    track their child in school. This includes things like,
+                    viewing grades, looking at current agenda, viewing
+                    attendance, and also providing authorization for things like
+                    field trip forms all via our website. In designing this, we
+                    used HTML, CSS, and JavaScript for the front end, and
+                    MongoDB for the backend and administration. Pictures are
+                    included in the link.
+                    <a
+                      href="https://github.com/danielnwaroh/LYNK"
+                      target="_blank"
+                      >GitHub Link</a
+                    ></span
+                  >
+                </li>
+                <li>
+                  <strong style="font-size: 13px;">
+                    Semester Project: Shuffl
+                  </strong>
+                  <span style="font-size: 17px;">
+                    As a semester project, my group and I created a website that
+                    allows users to talk to each and listen to music at the same
+                    time. Essentially users would create chat rooms where the
+                    host can control the music being played in that room, while
+                    everyone else can communicate within each other within the
+                    chat room The music streaming was handled using the YouTube
+                    API. The front-end portion, we mostly used the JavaScript
+                    library React, while for backend, database and server
+                    communication we used MongoDB and Express.
+                    <a href="https://github.com/issackj1/Group5" target="_blank"
+                      >GitHub Link</a
+                    ></span
+                  >
+                </li>
+                <li>
+                  <strong style="font-size: 13px;">
+                    Semester Project: SpotGrab(Android Application)
+                  </strong>
+                  <span style="font-size: 17px;">
+                    As a semester project in an entrepreneurship class, my group
+                    and I created an Android Application that connects employers
+                    to potential employees, to help the employer fill in a shift
+                    for that one specific day. In development, we used Android
+                    Studio and Google Firebase for our database. During the
+                    planning phase, Figma was used to sketch out different UX
+                    designs.
+                    <a
+                      href="https://github.com/danielnwaroh/SpotGrab"
+                      target="_blank"
+                      >GitHub Link</a
+                    ></span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-
-   <section id="portfolio">
-     <div class="row section-intro">
-       <div class="col-twelve">
-         <h5>Work Experience</h5>
-         <div class="timeline-block">
-           <div class="timeline-ico">
-             <i class="fa fa-briefcase" style="font-size:24px"></i>
-           </div>
-           <div class="timeline-header">
-             <h3>O2 Planning + Design</h3>
-             <p>April 2019 - December 2019</p>
-           </div>
-           <div class="timeline-content">
-             <h4>Software Developer Intern</h4>
-             <!-- <p>What I did</p> -->
-           </div>
-         </div>
-       </div>
-     </div>
-   </section>
-
-   <section id="projects">
-     <div class="row section-intro">
-
-       <div class="col-twelve">
-         <h5> Projects </h5>
-         <div class="row about-content">
-           <div class="col-twelve tab-full">
-            <ul class="info-list">
-              <li>
-                <strong style="font-size:13px"> Raspberry PI: Arkanoid Game </strong>
-                <span style="font-size:17px"> A video game created as an assignment. It was coded completely using ARM Assembly on Raspberry Pi 3. The game itself is playable with a SNES controller. Completed with two other classmates. <a href="https://github.com/danielnwaroh/Arkanoid" target="_blank">GitHub Link</a></span>
-              </li>
-              <li>
-                <strong style="font-size:13px"> Java Game: Astro Jump </strong>
-                <span style="font-size:17px"> A semester-long project which was a live-action game coded in Java, which uses GUI, and multiple other graphical implementations. Done as a class project in the first year of the program. Completed with other members of my group. <a href="https://github.com/danielnwaroh/AstroJump" target="_blank">GitHub Link</a></span>
-              </li>
-              <li>
-                <strong style="font-size:13px"> Hackathon Project: Lynck </strong>
-                <span style="font-size:17px"> As a Hackathon project, my team and I created a website that would help parents communicate with teachers easier and track their child in school. This includes things like, viewing grades, looking at current agenda, viewing attendance, and also providing authorization for things like field trip forms all via our website. In designing this, we used HTML, CSS, and JavaScript for the front end, and MongoDB for the backend and administration. Pictures are included in the link. <a href="https://github.com/danielnwaroh/LYNK" target="_blank">GitHub Link</a></span>
-              </li>
-              <li>
-                <strong style="font-size:13px"> Semester Project: Shuffl </strong>
-                <span style="font-size:17px"> As a semester project, my group and I created a website that allows users to talk to each and listen to music at the same time. Essentially users would create chat rooms where the host can control the music being played in that room, while everyone else can communicate within each other within the chat room The music streaming was handled using the YouTube API. The front-end portion, we mostly used the JavaScript library React, while for backend, database and server communication we used MongoDB and Express. <a href="https://github.com/issackj1/Group5" target="_blank">GitHub Link</a></span>
-              </li>
-              <li>
-                <strong style="font-size:13px"> Semester Project: SpotGrab(Android Application)  </strong>
-                <span style="font-size:17px"> As a semester project in an entrepreneurship class, my group and I created an Android Application that connects employers to potential employees, to help the employer fill in a shift for that one specific day. In development, we used Android Studio and Google Firebase for our database. During the planning phase, Figma was used to sketch out different UX designs. <a href="https://github.com/danielnwaroh/SpotGrab" target="_blank">GitHub Link</a></span>
-              </li>
-            </ul>
-           </div>
-         </div>
-       </div>
-     </div>
-   </section>
-
-   <section id="interests">
-     <div class="row section-intro">
-       <div class="col-twelve">
-         <h5> Interests </h5>
-         <div class="row about-content">
-           <div class="col-six tab-full">
-             <!-- Course Name
+    <section id="interests">
+      <div class="row section-intro">
+        <div class="col-twelve">
+          <h5>Interests</h5>
+          <div class="row about-content">
+            <div class="col-six tab-full">
+              <!-- Course Name
             Description of Course -->
-             <ul class="info-list">
-               <li>
-                 <strong style="font-size:13px">Mobile Application Development</strong>
-                 <!-- <span style="font-size:17px"> Course about data structures and stuff. Red Black Trees, that kinda stuff </span> -->
-               </li>
-               <li>
-                 <strong style="font-size:13px">Web Development</strong>
-                 <!-- <span style="font-size:17px"> Course that covers key conceptual foundations as well as key methods and techniques used in the different phases of the software lifecycle. </span> -->
-               </li>
-               <li>
-                 <strong style="font-size:13px">Data Analysis</strong>
-                 <!-- <span style="font-size:17px"> An introductory course to operating systems principles. Performance measurement; concurrent programs; the management of information, memory and processor resources. </span> -->
-               </li>
-               <li>
-                 <strong style="font-size:13px">Data Visualization</strong>
-                 <!-- <span style="font-size:17px"> Programming in different languages and different techniques. Haskell, Prolog, Java. </span> -->
-               </li>
-               <li>
-                 <strong style="font-size:13px">Music</strong>
-                 <!-- <span style="font-size:17px"> Programming in different languages and different techniques. Haskell, Prolog, Java. </span> -->
-               </li>
-             </ul>
-           </div>
-           <div class="col-six tab-full">
-             <!-- Course Name
+              <ul class="info-list">
+                <li>
+                  <strong style="font-size: 13px;"
+                    >Mobile Application Development</strong
+                  >
+                  <!-- <span style="font-size:17px"> Course about data structures and stuff. Red Black Trees, that kinda stuff </span> -->
+                </li>
+                <li>
+                  <strong style="font-size: 13px;">Web Development</strong>
+                  <!-- <span style="font-size:17px"> Course that covers key conceptual foundations as well as key methods and techniques used in the different phases of the software lifecycle. </span> -->
+                </li>
+                <li>
+                  <strong style="font-size: 13px;">Data Analysis</strong>
+                  <!-- <span style="font-size:17px"> An introductory course to operating systems principles. Performance measurement; concurrent programs; the management of information, memory and processor resources. </span> -->
+                </li>
+                <li>
+                  <strong style="font-size: 13px;">Data Visualization</strong>
+                  <!-- <span style="font-size:17px"> Programming in different languages and different techniques. Haskell, Prolog, Java. </span> -->
+                </li>
+                <li>
+                  <strong style="font-size: 13px;">Music</strong>
+                  <!-- <span style="font-size:17px"> Programming in different languages and different techniques. Haskell, Prolog, Java. </span> -->
+                </li>
+              </ul>
+            </div>
+            <div class="col-six tab-full">
+              <!-- Course Name
             Description of Course -->
-             <ul class="info-list">
-               <li>
-                 <strong style="font-size:13px">Task Automation</strong>
-                 <!-- <span style="font-size:17px"> Course about data structures and stuff. Red Black Trees, that kinda stuff </span> -->
-               </li>
-               <li>
-                 <strong style="font-size:13px">Innovation & Technology</strong>
-                 <!-- <span style="font-size:17px"> Course about data structures and stuff. Red Black Trees, that kinda stuff </span> -->
-               </li>
-               <li>
-                 <strong style="font-size:13px">Sports Statistics</strong>
-                 <!-- <span style="font-size:17px"> Course about data structures and stuff. Red Black Trees, that kinda stuff </span> -->
-               </li>
-               <li>
-                 <strong style="font-size:13px">Machine Learning</strong>
-                 <!-- <span style="font-size:17px"> Course about data structures and stuff. Red Black Trees, that kinda stuff </span> -->
-               </li>
-               <li>
-                 <strong style="font-size:13px">UX Design</strong>
-                 <!-- <span style="font-size:17px"> Course about data structures and stuff. Red Black Trees, that kinda stuff </span> -->
-               </li>
-             </ul>
-           </div>
+              <ul class="info-list">
+                <li>
+                  <strong style="font-size: 13px;">Task Automation</strong>
+                  <!-- <span style="font-size:17px"> Course about data structures and stuff. Red Black Trees, that kinda stuff </span> -->
+                </li>
+                <li>
+                  <strong style="font-size: 13px;"
+                    >Innovation & Technology</strong
+                  >
+                  <!-- <span style="font-size:17px"> Course about data structures and stuff. Red Black Trees, that kinda stuff </span> -->
+                </li>
+                <li>
+                  <strong style="font-size: 13px;">Sports Statistics</strong>
+                  <!-- <span style="font-size:17px"> Course about data structures and stuff. Red Black Trees, that kinda stuff </span> -->
+                </li>
+                <li>
+                  <strong style="font-size: 13px;">Machine Learning</strong>
+                  <!-- <span style="font-size:17px"> Course about data structures and stuff. Red Black Trees, that kinda stuff </span> -->
+                </li>
+                <li>
+                  <strong style="font-size: 13px;">UX Design</strong>
+                  <!-- <span style="font-size:17px"> Course about data structures and stuff. Red Black Trees, that kinda stuff </span> -->
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-         </div>
-       </div>
-     </div>
-   </section>
+    <section id="contact">
+      <div class="row section-intro">
+        <div class="col-twelve">
+          <h5>Contact</h5>
+          <h1>Feel free to contact me if you have any questions</h1>
+        </div>
+      </div>
+      <div class="row contact-form">
+        <div class="col-twelve">
+          <form name="contactForm" id="contactForm" method="post" action="">
+            <fieldset>
+              <div class="form-field">
+                <input
+                  name="contactName"
+                  type="text"
+                  id="contactName"
+                  placeholder="Name"
+                  value=""
+                  minlength="2"
+                  required=""
+                />
+              </div>
+              <div class="form-field">
+                <input
+                  name="contactEmail"
+                  type="email"
+                  id="contactEmail"
+                  placeholder="Email"
+                  value=""
+                  required=""
+                />
+              </div>
+              <div class="form-field">
+                <input
+                  name="contactSubject"
+                  type="text"
+                  id="contactSubject"
+                  placeholder="Subject"
+                  value=""
+                />
+              </div>
+              <div class="form-field">
+                <textarea
+                  name="contactMessage"
+                  id="contactMessage"
+                  placeholder="message"
+                  rows="10"
+                  cols="50"
+                  required=""
+                ></textarea>
+              </div>
+              <div class="form-field">
+                <button class="submitform">Submit</button>
+                <div id="submit-loader">
+                  <div class="text-loader">Sending...</div>
+                  <div class="s-loader">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+          <div id="message-warning"></div>
+          <div id="message-success">
+            <!--           <i class="fa fa-check"></i>Your message was sent, thank you!</br>-->
+          </div>
+        </div>
+      </div>
+    </section>
 
-   <section id="contact">
-     <div class="row section-intro">
-       <div class="col-twelve">
-         <h5>Contact</h5>
-         <h1>Feel free to contact me if you have any questions</h1>
-       </div>
-     </div>
-     <div class="row contact-form">
-       <div class="col-twelve">
-         <form name="contactForm" id="contactForm" method="post" action="">
-           <fieldset>
-             <div class="form-field">
-               <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
-             </div>
-             <div class="form-field">
-               <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
-             </div>
-             <div class="form-field">
-               <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
-             </div>
-             <div class="form-field">
-               <textarea name="contactMessage" id="contactMessage" placeholder="message"rows="10" cols="50" required=""></textarea>
-             </div>
-             <div class="form-field">
-               <button class="submitform">Submit</button>
-               <div id="submit-loader">
-                 <div class="text-loader">Sending...</div>
-                 <div class="s-loader">
-                   <div class="bounce1"></div>
-                   <div class="bounce2"></div>
-                   <div class="bounce3"></div>
-                 </div>
-               </div>
-             </div>
-           </fieldset>
-         </form>
-         <div id="message-warning">
-         </div>
-         <div id="message-success">
-           <i class="fa fa-check"></i>Your message was sent, thank you!</br>
-         </div>
-       </div>
-     </div>
-   </section>
+    <footer>
+      <div class="row">
+        <div class="col-six tab-full pull-right social">
+          <ul class="footer-social">
+            <!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li> -->
+            <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
+            <li>
+              <a href="https://www.linkedin.com/in/daniel-nwaroh-ab962a96/"
+                ><i class="fa fa-linkedin"></i
+              ></a>
+            </li>
+            <!-- <li><a href="#"><i class="fa fa-instagram"></i></a></li> -->
+            <li>
+              <a href="https://www.linkedin.com/in/daniel-nwaroh-ab962a96/"
+                ><i class="fa fa-github"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div id="go-top">
+          <a class="smoothscroll" title="Back to Top" href="#top"
+            ><i class="fa fa-long-arrow-up"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
 
-   <footer>
-     <div class="row">
-       <div class="col-six tab-full pull-right social">
-         <ul class="footer-social">
-           <!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li> -->
-           <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
-           <li><a href="https://www.linkedin.com/in/daniel-nwaroh-ab962a96/"><i class="fa fa-linkedin"></i></a></li>
-           <!-- <li><a href="#"><i class="fa fa-instagram"></i></a></li> -->
-           <li><a href="https://www.linkedin.com/in/daniel-nwaroh-ab962a96/"><i class="fa fa-github"></i></a></li>
-         </ul>
-       </div>
-       <div id="go-top">
-         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
-       </div>
-     </div>
-   </footer>
+    <div id="preloader">
+      <div id="loader"></div>
+    </div>
 
-   <div id="preloader">
-    	<div id="loader"></div>
-   </div>
-
-
-
-
-
-   <!-- Java Script
+    <!-- Java Script
    ================================================== -->
-   <script src="js/jquery-2.1.3.min.js"></script>
-   <script src="js/plugins.js"></script>
-   <script src="js/main.js"></script>
-</body>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
