@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9cd1389b-c7bf-4417-874b-608347e84efc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +22,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../weathertool" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -44,7 +43,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588835584573</updated>
-      <workItem from="1588835588360" duration="14235000" />
+      <workItem from="1588835588360" duration="15009000" />
+      <workItem from="1589157503907" duration="1262000" />
+      <workItem from="1589930636091" duration="1809000" />
     </task>
     <servers />
   </component>
@@ -56,6 +57,10 @@
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="419" y="259" key="EditFileWatcherDialog/0.0.1500.960@0.0.1500.960" timestamp="1588835864189" />
+    <state x="531" y="235" key="FileChooserDialogImpl" timestamp="1589157539104">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state x="531" y="235" key="FileChooserDialogImpl/0.0.1500.960@0.0.1500.960" timestamp="1589157539104" />
     <state x="252" y="125" key="SettingsEditor" timestamp="1588835866030">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
